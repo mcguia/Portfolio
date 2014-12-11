@@ -1,0 +1,410 @@
+/*
+Theme Name: 
+Theme URI: 
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 1.0
+Author: 320press
+Author URI: http://320press.com
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "proxima-nova", helvetica, arial, verdana, sans-serif !important;
+}
+
+#content {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+
+
+
+a {
+	color: #221fd3;
+	-webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
+
+p a {
+	color: #221fd3;
+}
+
+p#footer {
+	color:gray;
+	padding-top:20px;
+}
+
+.container{
+	width:100%;
+	max-width: 1000px;
+	padding: 0;
+	padding-top:25px;
+	margin: 0 auto;	
+}
+
+body.home #content{
+	min-height:88vh;
+}
+
+.about_section {
+	width:100%;
+	height:200px;
+	background: #efefef;
+}
+.about_content{
+	max-width:960px;
+	margin: 0 auto;
+}
+
+h2.description {
+	font-size:18px;
+}
+
+ul.social li{
+	float: left;
+	padding-right: 10px;
+	font-size: 2em;
+	list-style: none;
+}
+
+.post_content .description {
+	font-size: 18px;
+	line-height:24px;
+}
+
+.launch {
+	clear:both;
+	margin-top:30px;
+	padding:20px 0;
+	text-align:center;
+}
+
+.launch a.button{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight:bold;
+	border: 3px solid #221fd3;
+	padding:10px 20px;
+	margin:30px auto;
+	color: #221fd3;
+	text-decoration:none;
+	background:transparent;
+}
+
+.launch a.button:hover{
+	background: #221fd3;
+	color: white;
+}
+
+.navbar {
+	margin: 0 !important;
+	border:none;
+}
+
+.navbar > .container .navbar-brand {
+	margin-left: 0 !important;
+}
+
+.navbar-nav {
+	float:right;
+}
+
+.navbar-default {
+	background-color: transparent;
+}
+
+
+.navbar-brand img {
+	max-width:90px;
+	height:auto;
+}
+
+.nav > li > a {
+	text-transform:uppercase;
+	font-weight:bold;
+	color: #b3b1b1;
+	font-size:16px;
+	margin:28px 0 20px 40px;
+	padding: 0 0 5px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background:none;
+	color: #221fd3;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border:none;
+}
+
+#main .thumbnail a.project_thumb img{
+	max-height:100% !important;
+	width:100% !important;
+}
+
+#main .thumbnail a.project_thumb{
+	display: inline-block;
+
+	border: 1px solid #ece9e9;
+	height: 180px;
+	display: block;
+	text-align: center;
+    line-height: 180px;	
+	/* Hover Off */
+	-webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+
+}
+
+#main .thumbnail a.project_thumb:hover{
+	background: #ece9e9; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+	/* Hover On */
+	-webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+
+.thumbnail.active a.project_thumb{
+	background: #ece9e9;
+	border: none !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.thumbnail.nopadding{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.thumbnail:after{
+	margin:-1px;
+}
+
+#main .thumbnail{
+	margin: 0;
+	margin-bottom:5px;
+	margin-left:-10px;
+	margin-right:-10px;
+	border: none;
+	padding: 0;
+}
+
+#main .thumbnail img {
+	width: 100%;
+	height:auto;
+}
+
+.page-header {
+	padding: 0;
+	margin: 0;
+	border: none;
+	position: absolute;
+}
+
+.page-header h1{
+	padding: 0;
+	margin: 0;
+}
+
+.intro{
+	height: 100vh;
+    text-align: center;
+    display: table;
+    width: 100%;
+    background: url('../img/intro_bg.png') no-repeat fixed center;
+    background-size: cover;
+}
+
+.intro .intro_text{
+	color:white;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	width: 100%;
+}
+
+.intro_text h1{
+	font-size: 8em;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+.intro h1 img {
+	width: 50%;
+	height: auto;
+}
+
+.intro_text a.work_link{
+	color: white;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.intro_text a.work_link:hover{
+	color: #d9d9d9;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+
+h1.single-title{
+	text-align: center;
+	padding: 0 0 40px;
+	font-size: 5em;
+	color: #221fd3;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #221fd3;
+}
+
+h4 {
+	font-size: 18px;
+
+}
+
+h2.other {
+	color: #d9d9d9;
+	text-align: center;
+	padding-bottom:20px;
+}
+
+.gallery{
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+}
+
+.gallery img{
+	margin-bottom:30px;
+}
+
+#inner-footer {
+	text-align: center;
+	font-size: 11px;
+	padding: 20px 0;
+	clear: both;
+}
+
+
+@media (max-width: 768px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.intro{
+	display: none;
+	}
+	
+	.gallery img{
+		margin-bottom:20px;
+	}
+
+	a.work_link{
+		display: none;
+	}
+
+	.navbar-nav {
+		width: 100%;
+		margin: 0 auto 20px;
+	}
+
+	.container > .navbar-header, .container > .navbar-collapse {
+		margin:0 !important;
+	}
+
+	.nav > li{
+		width: 100%;
+		border-bottom: 1px solid #ece9e9;
+		text-align: center;
+	}
+
+	.nav > li > a {
+	margin:20px 0;
+	}
+
+	.navbar-toggle {
+	position: relative;
+	float: right;
+	margin-right: 0 !important;
+	padding: 20px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 0;
+	-webkit-transition: opacity 200ms ease-out;
+    -moz-transition: opacity 200ms ease-out;
+    -o-transition: opacity 200ms ease-out;
+    transition: opacity 200ms ease-out;
+	}
+
+	.navbar-toggle .icon-bar {
+	display: block;
+	width: 40px;
+	height: 4px;
+	border-radius: 0;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+	background-color: black;
+	}	
+
+	.navbar-default .navbar-toggle {
+	border-color: transparent;	
+	}
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;	
+	}	
+
+	h1.single-title{
+	font-size: 2em;
+	padding: 0 0 20px;
+	}
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+	li.last a{
+	margin-right: 0;
+	padding-right: 0;
+}
+}

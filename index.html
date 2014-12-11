@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lauren Sinski</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" id="image-lazy-load-frontend-css" href="css/frontend.css" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.full.min.js"></script>
+
+
+
+            <script type="text/javascript">
+            $(document).ready(function(){
+
+
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000,'easeInOutQuart');
+                    return false;
+                  }
+                }
+              });
+            });
+
+            var divs = $('.intro');
+            $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            divs.css({ 'opacity' : (1 - st/$( window ).height()) });
+            });
+
+            //Fade between pages
+            $('body').css('display', 'none');
+
+            $('body').fadeIn(500);
+
+
+            });
+
+        </script>
+
+</head>
+
+<body class="home" style="">
+<div class="intro" style="opacity: 1;">
+    <div class="intro_text">
+    <h1>insert cool lettering here</h1>
+    <a href="#work" class="work_link">View Some Work</a>
+    </div>
+</div>      
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container" id ="work">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+
+
+                <a class="navbar-brand" href="index.html"><img src="img/image3.png"></a>
+                
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <ul id="menu-main" class="nav navbar-nav">
+                        <li id="menu-item-441" class="active"><a href="index.html#work">Work</a></li>
+                        <li id="menu-item-415"><a href="personal.html">Personal</a></li>
+                        <li id="menu-item-416"><a href="about.html">About</a></li>
+                        <li id="menu-item-66"><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                    </div>
+
+                </div> <!-- end .container -->
+            </div> <!-- end .navbar -->
+        
+        </header> <!-- end header -->
+        
+        <div class="container" id="work">
+            
+            <div id="content" class="clearfix row">
+            
+                <div id="main" class="col col-lg-12 clearfix" role="main">
+
+                    <div class="clearfix col-md-4 col-sm-6" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
+                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
+                    </div>
+                    </div> <!-- end article -->
+                
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
+                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
+                    </div>
+                    </div> <!-- end article -->
+                
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
+                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
+                    </div>
+                    </div> <!-- end article -->
+                
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
+                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
+                    </div>
+                    </div> <!-- end article -->
+                
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
+                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
+                    </div>
+                    </div> <!-- end article -->
+                
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
+                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
+                    </div>
+                    </div> <!-- end article -->    
+
+                
+                </div> <!-- end #main -->
+    
+                    
+
+
+            <footer role="contentinfo">
+            
+            <div id="inner-footer" class="clearfix">
+
+                        <p id="footer">Copyright &copy; 2014</p>
+            </div> <!-- end #inner-footer -->
+                
+            </footer> <!-- end footer -->
+        
+            </div> <!-- end #content -->
+        </div> <!-- end #container -->
+                
+        <!--[if lt IE 7 ]>
+            <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+            <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+        
+    <script type="text/javascript">var imageUnveilload = 100;</script><script type="text/javascript" src="js/unveil-ui.min.js"></script>
+
+    </body>
+
+</html>

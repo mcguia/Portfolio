@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
+
     <title>Lauren Sinski</title>
 
     <!-- Bootstrap Core CSS -->
@@ -17,63 +19,31 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" id="image-lazy-load-frontend-css" href="css/frontend.css" type="text/css" media="all">
     <link href="css/style.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/modernizr.full.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
-
-
-            <script type="text/javascript">
-            $(document).ready(function(){
-
-
-            $(function() {
-              $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                  if (target.length) {
-                    $('html,body').animate({
-                      scrollTop: target.offset().top
-                    }, 1000,'easeInOutQuart');
-                    return false;
-                  }
-                }
-              });
-            });
-
-            var divs = $('.intro');
-            $(window).on('scroll', function() {
-            var st = $(this).scrollTop();
-            divs.css({ 'opacity' : (1 - st/$( window ).height()) });
-            });
-
-            //Fade between pages
-            $('body').css('display', 'none');
-
-            $('body').fadeIn(500);
-
-
-            });
-
-        </script>
 
 </head>
 
 <body class="home" style="">
 <div class="intro" style="opacity: 1;">
     <div class="intro_text">
-    <h1>insert cool lettering here</h1>
-    <a href="#work" class="work_link">View Some Work</a>
+    <h1><img src="img/intro2.png"></h1>
+    <div class="intro_arrow">
+    <a href="#work"> <span class="fa-stack fa-lg">
+  <i class="fa fa-circle-o fa-stack-2x"></i>
+  <i class="fa fa-chevron-down fa-stack-1x"></i>
+</span></a>
+
+    </div>
     </div>
 </div>      
-
+    <header role="banner" id="work">
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
-        <div class="container" id ="work">
+        <div class="container">
+        
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -85,7 +55,7 @@
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
 
 
-                <a class="navbar-brand" href="index.html"><img src="img/image3.png"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
                 
                     </div>
 
@@ -104,65 +74,64 @@
         
         </header> <!-- end header -->
         
-        <div class="container" id="work">
+        <div class="container">
             
             <div id="content" class="clearfix row">
             
                 <div id="main" class="col col-lg-12 clearfix" role="main">
+    
+                    
+                    <div class="clearfix col-md-4 col-sm-6 nopadding" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="dis-redesign.html" rel="bookmark" title="DIS Website Redesign"><img src="img/pdiweb_prev.png"></a>
+                        <div class="caption"><h4> DIS Website Redesign | Fall 2014</h4></div>
+                    </div>
+                    </div> <!-- end article -->
+                
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6 nopadding" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="rclubs.html" rel="bookmark" title="rClubs"><img src="img/placeholder.png"></a>
+                        <div class="caption"><h4> rClubs | Fall 2014</h4></div>
+                    </div>
+                    </div> <!-- end article -->
+                 
 
-                    <div class="clearfix col-md-4 col-sm-6" role="article">
-                    <div class="thumbnail">
-                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
-                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
-                    </div>
-                    </div> <!-- end article -->
-                
-                    
-                    
-                    <div class="clearfix col-md-4 col-sm-6" role="article">
-                    <div class="thumbnail">
-                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
-                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
-                    </div>
-                    </div> <!-- end article -->
-                
-                    
-                    
-                    <div class="clearfix col-md-4 col-sm-6" role="article">
-                    <div class="thumbnail">
-                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
-                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
-                    </div>
-                    </div> <!-- end article -->
-                
-                    
-                    
-                    <div class="clearfix col-md-4 col-sm-6" role="article">
-                    <div class="thumbnail">
-                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
-                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
-                    </div>
-                    </div> <!-- end article -->
-                
-                    
-                    
-                    <div class="clearfix col-md-4 col-sm-6" role="article">
-                    <div class="thumbnail">
-                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
-                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
-                    </div>
-                    </div> <!-- end article -->
-                
-                    
-                    
-                    <div class="clearfix col-md-4 col-sm-6" role="article">
-                    <div class="thumbnail">
-                        <a class="project_thumb link" href="#" rel="bookmark" title="Project"><img src="img/image2.png"></a>
-                        <div class="caption"><h4> Project Title</h4><small>Blah blah</small></div>
-                    </div>
-                    </div> <!-- end article -->    
 
+                    <div class="clearfix col-md-4 col-sm-6 nopadding" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="citycraft.html" rel="bookmark" title="CityCraft"><img src="img/city_prev.png"></a>
+                        <div class="caption"><h4> CityCraft | Spring 2014</h4></div>
+                    </div>
+                    </div> <!-- end article -->
+
+
+
+                    <div class="clearfix col-md-4 col-sm-6 nopadding" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="vna.html" rel="bookmark" title="Eddy VNA"><img src="img/vna_prev.png"></a>
+                        <div class="caption"><h4> Eddy VNA | Spring 2014</h4></div>
+                    </div>
+                    </div> <!-- end article -->
+                  
                 
+                    
+                    
+                    <div class="clearfix col-md-4 col-sm-6 nopadding" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="backpack.html" rel="bookmark" title="RPI Backpack"><img src="img/backpack_prev.png"></a>
+                        <div class="caption"><h4> RPI Backpack | Spring 2014</h4></div>
+                    </div>
+                    </div> <!-- end article --> 
+                    
+
+                    <div class="clearfix col-md-4 col-sm-6 nopadding" role="article">
+                    <div class="thumbnail">
+                        <a class="project_thumb link" href="#work" rel="bookmark" title="Coming soon!"><img src="img/placeholder.png"></a>
+                    </div>
+                    </div> <!-- end article -->   
+
                 </div> <!-- end #main -->
     
                     
@@ -179,14 +148,44 @@
         
             </div> <!-- end #content -->
         </div> <!-- end #container -->
-                
-        <!--[if lt IE 7 ]>
-            <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-            <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-        <![endif]-->
-        
-    <script type="text/javascript">var imageUnveilload = 100;</script><script type="text/javascript" src="js/unveil-ui.min.js"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000,'easeInOutQuart');
+                return false;
+              }
+            }
+          });
+        });
+
+        var divs = $('.intro');
+        $(window).on('scroll', function() {
+        var st = $(this).scrollTop();
+        divs.css({ 'opacity' : (1 - st/$( window ).height()) });
+        });
+
+        //Fade between pages
+        $('body').css('display', 'none');
+
+        $('body').fadeIn(500);
+
+
+        });
+
+    </script>
     </body>
 
 </html>
